@@ -339,9 +339,7 @@ const AddChange = () => {
           <div className='entryField'>
             <label htmlFor='cost'>Cost: </label>
             <input 
-              type='number' 
-              step={0.01}
-              min={0}
+              type='text' 
               id='cost' 
               name='cost' 
               value={cost}
@@ -350,7 +348,7 @@ const AddChange = () => {
           </div>
 
           <div className='entryField'>
-            <label htmlFor='genre'>Genre: </label>
+            <label htmlFor='genre'>Genre(s): </label>
             <input 
               type='text' 
               id='genre' 

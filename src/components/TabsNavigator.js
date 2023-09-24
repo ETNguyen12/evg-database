@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import {Link, useLocation} from "react-router-dom";
+import {Link, useLocation, useNavigate } from "react-router-dom";
 import "./TabsNavigator.css";
 
 const TabsNavigator = () => {
   const [currentTab, setCurrentTab] = useState("Home");
   const location = useLocation();
+  const [search, setSearch] = useState("");
 
   useEffect(()=> {
     if(location.pathname === "/") {
@@ -18,10 +19,27 @@ const TabsNavigator = () => {
     }
   },[location]);
 
+  const navigate = useNavigate();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    navigate(`/search?gameTitle=${search}`);
+    setSearch("");
+  }
+
   return (
     <div className='header'>
         <p className='name'>EVG Database</p>
         <div className='right'>
+          <form onSubmit={handleSearch} style={{display: "inline"}}>
+            <input 
+              type='text'
+              className='searchField'
+              placeholder='Search Game Title'
+              onChange={(e) => setSearch(e.target.value)}
+              value={search}
+            />
+          </form>
           <Link to="home">
             <p 
               className={currentTab === "Home" ? "active" : ""}

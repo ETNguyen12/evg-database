@@ -8,6 +8,7 @@ import AddChange from './pages/AddChange';
 import View from './pages/View';
 import About from './pages/About';
 import TabsNavigator from './components/TabsNavigator';
+import Search from './pages/Search';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/update/:id" element={<AddChange />}/>
           <Route path="/view/:id" element={<View />}/>
           <Route path="/about" element={<About />}/>
+          <Route path="/search" element={<Search />}/>
         </Routes>
       </div>
     </BrowserRouter>

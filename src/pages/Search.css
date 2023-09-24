@@ -1,0 +1,39 @@
+.entireSearch {
+    margin-top: 90px;
+}
+
+.table-head {
+    text-align: center;
+}
+
+.table {
+    margin: auto;
+    font-size: 12px;
+    font-family: serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table thead tr {
+    background-color: #3aced3;
+    text-align: left;
+}
+
+.table thead tr th {
+    border: black 2px solid;
+}
+
+.table th, .table td {
+    padding: 0px 10px;
+}
+
+tr {
+    min-height: 60px;
+}
+
+.validEVG {
+    background-color: #b5e6c9; 
+}
+
+.invalidEVG {
+    background-color: #d6a7a4; 
+}
