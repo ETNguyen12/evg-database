@@ -3,7 +3,7 @@
     box-sizing: border-box;
     /* display: flex; */
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 img {
@@ -55,4 +55,14 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+.type1 {
+    position: relative;
+    /* left: -50%; */
+}
+
+.type2 {
+    position: relative;
+    /* right: -50%; */
 }

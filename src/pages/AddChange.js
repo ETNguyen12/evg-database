@@ -88,7 +88,7 @@ const AddChange = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if(!gameTitle) {
-      toast.error("Game Title Needed")
+      toast.error("Game Title Needed!")
     }
     else {
       if(!id) {
@@ -97,7 +97,7 @@ const AddChange = () => {
             toast.error(err);
           }
           else{
-            toast.success("Video Game Added Successfully!")
+            toast.success("Game Added Successfully!")
           }
         })
       }
@@ -107,7 +107,7 @@ const AddChange = () => {
             toast.error(err);
           }
           else{
-            toast.success("Video Game Updated Successfully!")
+            toast.success("Game Updated Successfully!")
           }
         })
       }
@@ -132,7 +132,7 @@ const AddChange = () => {
           </div>
 
         <div className='entryContainer'>
-          <div className='entryField'>
+          <div className='entryField type1'>
             <label htmlFor='gameTitle'>Game Title: </label>
             <input 
               type='text' 
@@ -143,7 +143,7 @@ const AddChange = () => {
             />
           </div>
 
-          <div className='entryField'>
+          <div className='entryField type2'>
             <label htmlFor='source'>Source: </label>
             <input 
               type='text' 

@@ -16,6 +16,8 @@
 .table thead tr {
     background-color: #3aced3;
     text-align: left;
+    position: sticky;
+    top: 90px;
 }
 
 .table thead tr th {
